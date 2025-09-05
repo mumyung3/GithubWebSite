@@ -17,7 +17,8 @@
       "Bash(sudo snap install:*)",
       "Bash(export:*)",
       "Bash(npm run build:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(echo $PS1)"
     ],
     "deny": [],
     "ask": []
