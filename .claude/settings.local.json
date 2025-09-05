@@ -5,7 +5,8 @@
       "Bash(ssh-keygen:*)",
       "Bash(ssh-add:*)",
       "Bash(cat:*)",
-      "Bash(ssh:*)"
+      "Bash(ssh:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
