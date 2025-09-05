@@ -136,3 +136,38 @@ For optimal integration, each project repository should:
 3. Set Source to "GitHub Actions"
 4. Push to `main` branch triggers automatic deployment
 5. Site available at `https://username.github.io` after deployment
+
+## React Development Environment
+
+### Vite + React Setup
+A React development environment has been added alongside the static website:
+
+- **Location**: `react-portfolio/` directory
+- **Technology Stack**: Vite + React + JSX
+- **Development Server**: `http://localhost:5173/`
+- **Status**: Separate from main static site, independent development
+
+### Development Commands (React)
+```bash
+# Navigate to React project
+cd react-portfolio
+
+# Start development server (requires proper PATH setup for WSL)
+export PATH="/snap/bin:$PATH"
+npm run dev
+
+# Build for production
+npm run build
+```
+
+### WSL Environment Notes
+- Node.js version: v22.19.0 (via snap)
+- npm version: 10.9.3 (via snap) 
+- **Important**: Use `export PATH="/snap/bin:$PATH"` to avoid Windows/WSL Node.js conflicts
+- React app runs in WSL but accessible from Windows browser
+
+### Architecture Decision
+- **Static Site**: Original HTML/CSS/JS portfolio remains unchanged
+- **React App**: New development option for component-based development
+- **Independence**: Both can coexist and serve different purposes
+- **Future Direction**: Choose one approach or use both for different projects
