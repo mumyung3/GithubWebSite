@@ -16,7 +16,8 @@
       "Bash(npm --version)",
       "Bash(sudo snap install:*)",
       "Bash(export:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []
