@@ -3,157 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오 | Your Name</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio - Redirecting...</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .loading {
+            text-align: center;
+        }
+        .spinner {
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top: 3px solid white;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // Immediate redirect
+        window.location.href = './dist/';
+    </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-container">
-                <div class="logo">
-                    <h1>Your Name</h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#about">소개</a></li>
-                    <li><a href="#projects">프로젝트</a></li>
-                    <li><a href="#contact">연락처</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>안녕하세요, <span class="highlight">개발자</span> Your Name입니다</h2>
-                <p>웹 개발과 소프트웨어 엔지니어링에 열정을 가진 개발자입니다.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary">프로젝트 보기</a>
-                    <a href="#contact" class="btn secondary">연락하기</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <h2>소개</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>저는 웹 개발에 관심이 많은 개발자입니다. 사용자 경험을 중시하며, 깔끔하고 효율적인 코드를 작성하기 위해 노력합니다.</p>
-                        <div class="skills">
-                            <h3>기술 스택</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">React</span>
-                                <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">HTML/CSS</span>
-                                <span class="skill-tag">Git</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>프로젝트</h2>
-                <div class="projects-grid">
-                    <!-- 프로젝트 예시 - 실제 GitHub 레포지토리에 맞게 수정하세요 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250?text=Project+1" alt="프로젝트 1">
-                        </div>
-                        <div class="project-content">
-                            <h3>웹 애플리케이션 프로젝트</h3>
-                            <p>React와 Node.js를 사용한 풀스택 웹 애플리케이션입니다.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://username.github.io/project-name" class="btn-link" target="_blank">라이브 데모</a>
-                                <a href="https://github.com/username/project-name" class="btn-link" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250?text=Project+2" alt="프로젝트 2">
-                        </div>
-                        <div class="project-content">
-                            <h3>모바일 앱 프로젝트</h3>
-                            <p>React Native로 개발한 크로스 플랫폼 모바일 애플리케이션입니다.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Firebase</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://username.github.io/mobile-project" class="btn-link" target="_blank">라이브 데모</a>
-                                <a href="https://github.com/username/mobile-project" class="btn-link" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250?text=Project+3" alt="프로젝트 3">
-                        </div>
-                        <div class="project-content">
-                            <h3>데이터 분석 프로젝트</h3>
-                            <p>Python을 사용한 데이터 분석 및 시각화 프로젝트입니다.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Pandas</span>
-                                <span class="tech-tag">Matplotlib</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://username.github.io/data-project" class="btn-link" target="_blank">라이브 데모</a>
-                                <a href="https://github.com/username/data-project" class="btn-link" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>연락처</h2>
-                <div class="contact-content">
-                    <p>프로젝트에 대한 문의나 협업 제안이 있으시면 언제든 연락해 주세요!</p>
-                    <div class="contact-links">
-                        <a href="mailto:your.email@example.com" class="contact-link">
-                            <span>📧</span>
-                            your.email@example.com
-                        </a>
-                        <a href="https://github.com/username" class="contact-link" target="_blank">
-                            <span>💻</span>
-                            GitHub
-                        </a>
-                        <a href="https://linkedin.com/in/username" class="contact-link" target="_blank">
-                            <span>💼</span>
-                            LinkedIn
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <div class="loading">
+        <div class="spinner"></div>
+        <h2>포트폴리오로 이동 중...</h2>
+        <p>잠시만 기다려주세요.</p>
+        <p><a href="./dist/">수동으로 이동하기</a></p>
+    </div>
 </body>
 </html>
